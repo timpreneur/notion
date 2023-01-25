@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+<head>
+  <meta charset='UTF-8'>
+  <title>Weather</title>
+  <meta name="robots" content="noindex">
+  <style>
+    body {
+  --text-color: #222;
+  --bkg-color: #fff;
+}
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  body.light-theme {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+h1,
+p {
+  color: var(--text-color);
+}
+  </style>
+</head>
+<body>
+<a class="weatherwidget-io" href="https://forecast7.com/en/40d47n111d25/timber-lakes/?unit=us" data-label_1="TIMBER LAKES" data-label_2="WEATHER" data-theme="original" >TIMBER LAKES WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script> 
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+</body>
+</html>
